@@ -1,4 +1,4 @@
-#Базовое Задание 1
+# база 1
 
 x = 2
 print(x, type(x))
@@ -13,15 +13,14 @@ print(x, type(x))
 x = str(x)
 print(x, type(x))
 
-#Базовое Задание 2
-
+# база 2
 x = 0
 for i in range(1, 6):
     x += i
 sr = x/5
 print(f"Среднее значение данных 5 чисел равно: {format(sr, '.5f')}")
 
-#Базовое Задание 3
+# база 3
 
 a = 1
 x = 15
@@ -35,7 +34,7 @@ while a != 0:
     x += a
     c += 1
 
-#Дополнительное Задание 1
+# доп 1
 
 from math import sin, acos, cos
 import pylab
@@ -120,7 +119,7 @@ while t0 < t:
 pylab.plot(xList, yList)
 pylab.show()
 
-#Дополнительное Задание 2
+# доп 2
 
 print(f'Введите число')
 a = int(input())
