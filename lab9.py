@@ -39,8 +39,8 @@ def Circle_Draw(x, y, r):
 
     cc = plt.Circle((x, y), SuperCircle.r, color='blue', fill=False)
 
-    plt.ylim(y + r + (r//2), y - r - (r//2))
-    plt.xlim(x + r + (r//2), x - r - (r//2))
+    plt.ylim(y + r + (r // 2), y - r - (r // 2))
+    plt.xlim(x + r + (r // 2), x - r - (r // 2))
     axes.set_aspect(1)
     axes.add_artist(cc)
     plt.show()
@@ -111,8 +111,8 @@ class Matrix:
         M.matrix = np.transpose(self.matrix)
         return M
 
-m = Matrix( [ [0, 1, 2], [3, 4, 5], [6, 7, 8] ] )
-n = Matrix( [ [1, 5, 9] ] )
+m = Matrix([[0, 1, 2], [3, 4, 5], [6, 7, 8]])
+n = Matrix([[1, 5, 9]])
 print('Сумма двух одинаковых матриц m равна\n' + str(m + m))
 print('Произведение матриц n и m равно\n' + str(n * m))
 print('Матрица m - это\n' + str(m) + '\nа транспонированная ей - \n' + str(Matrix.transposed(m)))
